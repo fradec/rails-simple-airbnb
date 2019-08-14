@@ -12,8 +12,16 @@
   </head>
 
   <body>
-    <div class="container">
-      <%= yield %>
+
+    <div class="bg-white">
+      <div class="navbar bg-light d-flex justify-content-between mb-4">
+        <%= link_to "Simple Airbnb", flats_path, class: 'text-dark btn-lg' %>
+        <%= link_to "Add a flat", new_flat_path, class: 'btn btn-outline-primary btn-lg' %>
+      </div>
+
+      <div class="container">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
